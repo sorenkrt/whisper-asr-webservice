@@ -6,7 +6,7 @@ services:
     environment:
       - ASR_MODEL=${ASR_MODEL}
     ports:
-      - "${PORT}:${PORT}"
+      - "${PORT}:9000"
     volumes:
       - ./app:/app/app
       - cache-whisper:/root/.cache
