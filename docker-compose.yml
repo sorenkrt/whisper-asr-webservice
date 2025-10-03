@@ -10,6 +10,13 @@ services:
     volumes:
       - ./app:/app/app
       - cache-whisper:/root/.cache
+    networks:
+      - services-n8nwithpostgres-ogzytr    
 
 volumes:
   cache-whisper:
+
+networks:
+  services-n8nwithpostgres-ogzytr:
+    name: services-n8nwithpostgres-ogzytr
+    external: true
