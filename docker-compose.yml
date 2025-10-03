@@ -6,9 +6,9 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      - ASR_MODEL=base
+      - ASR_MODEL = ${ASR_MODEL}
     ports:
-      - "9000:9000"
+      - "${PORT}:${PORT}"
     volumes:
       - ./app:/app/app
       - cache-whisper:/root/.cache
