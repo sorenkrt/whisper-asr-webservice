@@ -15,7 +15,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '5.5'
+          cpus: '5'
 
 volumes:
   cache-whisper:
