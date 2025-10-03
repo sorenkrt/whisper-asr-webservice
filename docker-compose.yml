@@ -12,6 +12,10 @@ services:
       - cache-whisper:/root/.cache
     networks:
       - services-n8nwithpostgres-ogzytr    
+    deploy:
+      resources:
+        limits:
+          cpus: '5.5'
 
 volumes:
   cache-whisper:
